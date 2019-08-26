@@ -3,22 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/author/</loc>
+    <loc>http://erlebt-kirche-fur-potsdam.github.io/Website/author/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>http://erlebt-kirche-fur-potsdam.github.io/Website/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>http://erlebt-kirche-fur-potsdam.github.io/Website/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>http://erlebt-kirche-fur-potsdam.github.io/Website/tags/</loc>
     <priority>0</priority>
   </url>
   
