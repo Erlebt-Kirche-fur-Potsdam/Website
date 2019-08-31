@@ -1,119 +1,108 @@
-baseURL = "http://erlebt-kirche-fur-potsdam.github.io/Website"
-languageCode = "en-us"
-DefaultContentLanguage = "en"
-title = "Elebt - Kirche für Potsdam"
-theme = "meghna-hugo"
-summaryLength = 10
+baseurl = "http://erlebt-kirche-fur-potsdam.github.io/Website"
+languageCode = "de-DE"
+title = "Erlebt - Kirche für Potsdam"
+theme = "hugo-creative-theme"
+googleAnalytics = ""
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
-[taxonomies]
-  author = "author"
-  category = "categories"
-  tag = "tags"
-
-# Menu
-[menu]
-    [[menu.nav]]
-    name = "About Us"
-    URL = "about"
-    weight = 2
-
-    [[menu.nav]]
-    name = "Blog"
-    URL = "blog"
-    weight = 3
-
-    [[menu.nav]]
-    name = "Contact"
-    URL = "contact-us"
-    weight = 4
-
-# Site params
 [params]
-home= "Home"
-logo = "images/logo.png"
-# gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
 
-# Meta data
-description = "Responsive Multipurpose Parallax HTML5 Template"
-author = "Themefisher"
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
 
-# Google Analitycs
-# googleAnalitycsID = "Your ID"
-custom_css = ["css/custom.css"]
+	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
 
-    # Banner Section
-    [params.banner]
-    enable = true
-    bgImage = "images/slider/hero-area.jpg"
-    icon = "tf-ion-play"
-    heading = "Experience the new reality"
-    content= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, excepturi. At recusandae sit perferendis autem,iste tempora nostrum numquam sapiente!"
-    btn = true
-    btnText="Explore Us"
-    btnURL="#services"
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more information take a look at the README.
 
-    # call to action
-    [params.cta]
-    enable = true
-    title = "Great Design & Incredible Features"
-    content = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tenetur odio impedit incidunt? Omnis accusantium ea reiciendis, fugit commodi nostrum."
-    btnURL = "#"
-    btnText = "Start a project with us"
+	# To provide some metadata for search engines feel free to add some
+	# information about you and your website.
+	name = "Erlebt"
+	description = "Kirche für Potsdam"
 
-    # counter
-    [params.counter]
-    enable = true
-    bgImage = "images/backgrounds/bg-1.jpg"
-        [[params.counter.counterItem]]
-        title = "Happy Clients"
-        icon = "tf-ion-android-happy"
-        count = "320"
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
 
-        [[params.counter.counterItem]]
-        title = "Projects completed"
-        icon = "tf-ion-archive"
-        count = "565"
 
-        [[params.counter.counterItem]]
-        title = "Positive feedback"
-        icon = "tf-ion-thumbsup"
-        count = "95"
+	# Navigation
+	[params.navigation]
+		brand = "Erlebt - Kirche für Potsdam"
 
-        [[params.counter.counterItem]]
-        title = "Cups of Coffee"
-        icon = "tf-ion-coffee"
-        count = "2500"
+		[params.navigation.links]
+			about     = "About"
+			services  = "Services"
+			portfolio = "Portfolio"
+			contact   = "Contact"
 
-    # footer
-    [params.footer]
-        copyright = "Themefisher Team"
-        copyrightURL = "http://www.themefisher.com"
 
-        # social Icons
-        [[params.footer.socialIcon]]
-        icon = "tf-ion-social-facebook"
-        url = "#"
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "Willkommen bei erlebt"
+		subtitle   = "Kirche sein, durch die Potsdamer Jesus erleben können."
+		buttonText = "Find out more"
 
-        [[params.footer.socialIcon]]
-        icon = "tf-ion-social-twitter"
-        url = "#"
 
-        [[params.footer.socialIcon]]
-        icon = "tf-ion-social-google-outline"
-        url = "#"
+	# About section
+	[params.about]
+		headline    = "We've got what you need!"
+		description = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!"
+		buttonText  = "Get started!"
 
-        [[params.footer.socialIcon]]
-        icon = "tf-ion-social-youtube"
-        url = "#"
 
-        [[params.footer.socialIcon]]
-        icon = "tf-ion-social-linkedin"
-        url = "#"
+	# Service section
+	[params.services]
+		headline = "At your service"
 
-        [[params.footer.socialIcon]]
-        icon = "tf-ion-social-dribbble-outline"
-        url = "#"
+        [[params.services.list]]
+            icon = "fa-diamond"
+            title = "Sturdy Templates"
+            description = "Our templates are updated regularly so they don't break."
 
-        [[params.footer.socialIcon]]
-        icon = "tf-ion-social-pinterest-outline"
-        url = "#"
+        [[params.services.list]]
+			icon = "fa-paper-plane"
+			title = "Ready to Ship"
+			description = "You can use this theme as is, or you can make changes!"
+
+		[[params.services.list]]
+            icon = "fa-newspaper-o"
+            title = "Up to Date"
+            description = "We update dependencies to keep things fresh."
+
+        [[params.services.list]]
+            icon = "fa-heart"
+            title = "Made with Love"
+            description = "You have to make your websites with love these days!"
+
+
+    # Portfolio modals
+	[params.portfolio.modal]
+        client = "Client"
+        date = "Date"
+        category = "Category"
+        buttonText = "Close"
+
+    # Aside section
+	[params.aside]
+		headline = "Get the Creative Theme for Hugo"
+
+		[params.aside.button]
+			text = "Download now"
+			link = "//github.com/digitalcraftsman/hugo-creative-theme"
+
+	# Contact section
+	[params.contact]
+		headline = "Let's Get In Touch!"
+		description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
+		phone = "123-456-6789"
+		email = "feedback@startbootstrap.com"
+
+	# Google Maps section
+	# [params.location]
+	# 	latitude  = "34.007850"
+	# 	longitude = "-118.499305"
+	# 	maps_api_key = ""
