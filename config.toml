@@ -44,39 +44,39 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "Willkommen bei erlebt"
 		subtitle   = "Kirche sein, durch die Potsdamer Jesus erleben können."
-		buttonText = "Find out more"
+		buttonText = "Mehr"
 
 
 	# About section
 	[params.about]
-		headline    = "We've got what you need!"
-		description = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!"
-		buttonText  = "Get started!"
+		headline    = "Was wir wollen"
+		description = "Kirche sein, durch die Potsdamer Jesus erleben können."
+		# buttonText  = "Get started!"
 
 
 	# Service section
 	[params.services]
-		headline = "At your service"
+		headline = "Sei dabei"
 
         [[params.services.list]]
-            icon = "fa-diamond"
-            title = "Sturdy Templates"
-            description = "Our templates are updated regularly so they don't break."
-
-        [[params.services.list]]
-			icon = "fa-paper-plane"
-			title = "Ready to Ship"
-			description = "You can use this theme as is, or you can make changes!"
+            icon = "fa-church"
+            title = "Gottesdienst"
+            description = "Du bist herzlich eingeladen vorbeizuschauen. Wir gestalten unsere Gottesdienste so, dass sie verständlich und ansprechend sind."
 
 		[[params.services.list]]
-            icon = "fa-newspaper-o"
-            title = "Up to Date"
-            description = "We update dependencies to keep things fresh."
+            icon = "fa-users"
+            title = "Kleingruppen"
+            description = "Eine super Möglichkeit im Glauben zu wachsen, mit anderen Leben zu teilen und Gott besser kennenzulernen."
 
         [[params.services.list]]
-            icon = "fa-heart"
-            title = "Made with Love"
-            description = "You have to make your websites with love these days!"
+			icon = "fa-praying-hands"
+			title = "Gebet"
+			description = "Wir glauben, dass Gebet eine große Kraft hat, weil Gott Gebet erhört und dadurch handelt."
+
+        [[params.services.list]]
+            icon = "fa-pizza-slice"
+            title = "SHINE Jugend"
+            description = "Das Jugendevent von erlebt. Jesus hat den SHINE Lifestyle vorgelebt und gezeigt, was wirklich wichtig ist im Leben."
 
 
     # Portfolio modals
