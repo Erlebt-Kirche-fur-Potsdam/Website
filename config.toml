@@ -43,7 +43,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "Willkommen bei erlebt"
-		subtitle   = "Kirche sein, durch die Potsdamer Jesus erleben können."
+		subtitle   = "Diese Website ist noch nicht fertig. Unsere aktuelle Website ist [hier](https://erlebt-potsdam.de/) gefunden."
 		buttonText = "Mehr"
 
 
