@@ -1,4 +1,4 @@
-baseurl = "https://erlebt-kirche-fur-potsdam.github.io/Website"
+baseurl = "http://test.erlebt-potsdam.de"
 languageCode = "de-DE"
 title = "Erlebt - Kirche für Potsdam"
 theme = "hugo-creative-theme"
