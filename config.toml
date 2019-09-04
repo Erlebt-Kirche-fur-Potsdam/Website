@@ -25,7 +25,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 	description = "Kirche für Potsdam"
 
 	# The path must be relative to the static folder
-	favicon = "favicon.ico"
+	favicon = "img/favicon.png"
 
 
 	# Navigation
