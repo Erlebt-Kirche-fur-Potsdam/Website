@@ -484,8 +484,6 @@ body {
     webkit-tap-highlight-color: #222;
 }
 
-#map {
+#location-map {
     height: 300px;
-    overflow: visible;
-    position: relative;
 }

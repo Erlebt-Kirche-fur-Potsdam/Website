@@ -23,6 +23,12 @@
 <link rel="stylesheet" href="https://test.erlebt-potsdam.de/css/creative.css" type="text/css">
 <link rel="stylesheet" href="https://test.erlebt-potsdam.de/css/modals.css" type="text/css">
 
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -53,19 +59,19 @@
             <ul class="nav navbar-nav navbar-right">
                 
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about">Über uns</a>
                     </li>
                 
                 
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#services">Sei dabei</a>
                     </li>
                 
                 
                 
                 
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">Kontakt</a>
                     </li>
                 
             </ul>
@@ -188,19 +194,17 @@
         
 
         
+            
+
+<section id="location" class="no-padding">
+    <div id="location-map"
+        data-lat="52.38903"
+        data-lon="13.07447"
+        data-popup="Erlebt Büro - Das Siebzehn"></div>
+</section>
+
 
         
-            <!-- ASIDE -->
-<aside class="bg-dark">
-    <div class="container text-center">
-        <div class="call-to-action">
-            <h2>Get the Creative Theme for Hugo</h2>
-            
-                <a href="//github.com/digitalcraftsman/hugo-creative-theme" class="btn btn-default btn-xl wow tada">Download now</a>
-            
-        </div>
-    </div>
-</aside>
 
         
 
@@ -211,13 +215,13 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 
-                    <h2 class="section-heading">Let&#39;s Get In Touch!</h2>
+                    <h2 class="section-heading">Kontact</h2>
                 
                 
                     <hr class="primary">
                 
                 
-                    <p>Ready to start your next project with us? That&rsquo;s great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    <p>Ruf uns an!</p>
                 
             </div>
             
@@ -227,7 +231,7 @@
                 
                 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>123-456-6789</p>
+                    <p>0331-27379716</p>
                 </div>
             
             
@@ -237,7 +241,7 @@
                 
                  text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a></p>
+                    <p><a href="mailto:kontakt@erlebt-potsdam.de">kontakt@erlebt-potsdam.de</a></p>
                 </div>
             
         </div>
@@ -256,6 +260,11 @@
 <script src="https://test.erlebt-potsdam.de/js/jquery.easing.min.js"></script>
 <script src="https://test.erlebt-potsdam.de/js/jquery.fittext.js"></script>
 <script src="https://test.erlebt-potsdam.de/js/wow.min.js"></script>
+
+<script src="//unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+<script src="https://test.erlebt-potsdam.de/js/leaflet.init.js"></script>
 
 <!-- Custom Theme JavaScript -->
 <script src="https://test.erlebt-potsdam.de/js/creative.js"></script>
