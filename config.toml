@@ -96,7 +96,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 	# Contact section
 	[params.contact]
-		headline = "Kontact"
+		headline = "Kontakt"
 		description = "Ruf uns an!"
 		phone = "0331-27379716"
 		email = "kontakt@erlebt-potsdam.de"
