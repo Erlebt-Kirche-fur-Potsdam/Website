@@ -2,7 +2,6 @@ baseurl = "https://test.erlebt-potsdam.de"
 languageCode = "de-DE"
 title = "Erlebt - Kirche für Potsdam"
 theme = "hugo-creative-theme"
-googleAnalytics = ""
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
@@ -32,12 +31,21 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 	[params.navigation]
 		brand = "Erlebt - Kirche für Potsdam"
 
-		[params.navigation.links]
-			about     = "Über uns"
-			services  = "Sei dabei"
-			# portfolio = "Portfolio"
-			contact   = "Kontakt"
+		[[params.navigation.links]]
+			title = "Über uns"
+			href = "#ueber-uns"
 
+		[[params.navigation.links]]
+			title = "Sei dabei"
+			href = "#dabei"
+
+		[[params.navigation.links]]
+			title = "Ort"
+			href = "#ort"
+
+		[[params.navigation.links]]
+			title = "Kontakt"
+			href = "#kontakt"
 
 	# Hero section
 	[params.hero]
@@ -51,12 +59,14 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 	[params.about]
 		headline    = "Was wir wollen"
 		description = "Kirche sein, durch die Potsdamer Jesus erleben können."
+		sectionid   = "ueber-uns"
 		# buttonText  = "Get started!"
 
 
 	# Service section
 	[params.services]
 		headline = "Sei dabei"
+		sectionid = "dabei"
 
         [[params.services.list]]
             icon = "fa-church"
@@ -100,9 +110,11 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 		description = "Ruf uns an!"
 		phone = "0331-27379716"
 		email = "kontakt@erlebt-potsdam.de"
+		sectionid = "kontakt"
 
 	# Openstreetmap section
 	[params.location]
 		latitude  = 52.38903
 		longitude = 13.07447
 	 	popup = "Erlebt Büro - Das Siebzehn"
+		sectionid = "ort"
