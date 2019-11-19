@@ -33,19 +33,19 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 		[[params.navigation.links]]
 			title = "Über uns"
-			href = "#about"
+			href = "#ueber-uns"
 
 		[[params.navigation.links]]
 			title = "Sei dabei"
-			href = "#services"
+			href = "#dabei"
 
 		[[params.navigation.links]]
 			title = "Ort"
-			href = "#location"
+			href = "#ort"
 
 		[[params.navigation.links]]
 			title = "Kontakt"
-			href = "#contact"
+			href = "#kontakt"
 
 	# Hero section
 	[params.hero]
@@ -59,12 +59,14 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 	[params.about]
 		headline    = "Was wir wollen"
 		description = "Kirche sein, durch die Potsdamer Jesus erleben können."
+		sectionid   = "ueber-uns"
 		# buttonText  = "Get started!"
 
 
 	# Service section
 	[params.services]
 		headline = "Sei dabei"
+		sectionid = "dabei"
 
         [[params.services.list]]
             icon = "fa-church"
@@ -108,9 +110,11 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 		description = "Ruf uns an!"
 		phone = "0331-27379716"
 		email = "kontakt@erlebt-potsdam.de"
+		sectionid = "kontakt"
 
 	# Openstreetmap section
 	[params.location]
 		latitude  = 52.38903
 		longitude = 13.07447
 	 	popup = "Erlebt Büro - Das Siebzehn"
+		sectionid = "ort"
