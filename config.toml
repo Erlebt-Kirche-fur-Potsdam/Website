@@ -48,6 +48,10 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             title = "Kontakt"
             href = "/#kontakt"
 
+        [[params.navigation.links]]
+            title = "Predigten"
+            href = "/predigten"
+
     # Hero section
     [params.hero]
         # To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
