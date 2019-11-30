@@ -6,82 +6,82 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
 
-	# You can use Markdown syntax for urls [text](//url.to/source) for
-	# most longer texts.
+    # You can use Markdown syntax for urls [text](//url.to/source) for
+    # most longer texts.
 
-	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
-	# for more icons. The icons are represented by their corresponding
-	# CSS class.
+    # All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
+    # for more icons. The icons are represented by their corresponding
+    # CSS class.
 
-	# All projects of the portfolio are defined in their own files.
-	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
-	# folder into the 'data' directory at the root of this Hugo site.
-	# For more information take a look at the README.
+    # All projects of the portfolio are defined in their own files.
+    # You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+    # folder into the 'data' directory at the root of this Hugo site.
+    # For more information take a look at the README.
 
-	# To provide some metadata for search engines feel free to add some
-	# information about you and your website.
-	name = "Erlebt"
-	description = "Kirche für Potsdam"
+    # To provide some metadata for search engines feel free to add some
+    # information about you and your website.
+    name = "Erlebt"
+    description = "Kirche für Potsdam"
 
-	# The path must be relative to the static folder
-	favicon = "img/favicon.png"
-
-
-	# Navigation
-	[params.navigation]
-		brand = "Erlebt - Kirche für Potsdam"
-
-		[[params.navigation.links]]
-			title = "Über uns"
-			href = "#ueber-uns"
-
-		[[params.navigation.links]]
-			title = "Sei dabei"
-			href = "#dabei"
-
-		[[params.navigation.links]]
-			title = "Ort"
-			href = "#ort"
-
-		[[params.navigation.links]]
-			title = "Kontakt"
-			href = "#kontakt"
-
-	# Hero section
-	[params.hero]
-		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-		slogan     = "Willkommen bei erlebt"
-		subtitle   = "Diese Website ist noch nicht fertig. Unsere aktuelle Website ist [hier](https://erlebt-potsdam.de/) gefunden."
-		buttonText = "Mehr"
+    # The path must be relative to the static folder
+    favicon = "img/favicon.png"
 
 
-	# About section
-	[params.about]
-		headline    = "Was wir wollen"
-		description = "Kirche sein, durch die Potsdamer Jesus erleben können."
-		sectionid   = "ueber-uns"
-		# buttonText  = "Get started!"
+    # Navigation
+    [params.navigation]
+        brand = "Erlebt - Kirche für Potsdam"
+
+        [[params.navigation.links]]
+            title = "Über uns"
+            href = "#ueber-uns"
+
+        [[params.navigation.links]]
+            title = "Sei dabei"
+            href = "#dabei"
+
+        [[params.navigation.links]]
+            title = "Ort"
+            href = "#ort"
+
+        [[params.navigation.links]]
+            title = "Kontakt"
+            href = "#kontakt"
+
+    # Hero section
+    [params.hero]
+        # To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+        slogan     = "Willkommen bei erlebt"
+        subtitle   = "Diese Website ist noch nicht fertig. Unsere aktuelle Website ist [hier](https://erlebt-potsdam.de/) gefunden."
+        buttonText = "Mehr"
 
 
-	# Service section
-	[params.services]
-		headline = "Sei dabei"
-		sectionid = "dabei"
+    # About section
+    [params.about]
+        headline    = "Was wir wollen"
+        description = "Kirche sein, durch die Potsdamer Jesus erleben können."
+        sectionid   = "ueber-uns"
+        # buttonText  = "Get started!"
+
+
+    # Service section
+    [params.services]
+        headline = "Sei dabei"
+        sectionid = "dabei"
 
         [[params.services.list]]
             icon = "fa-church"
             title = "Gottesdienst"
             description = "Du bist herzlich eingeladen vorbeizuschauen. Wir gestalten unsere Gottesdienste so, dass sie verständlich und ansprechend sind."
 
-		[[params.services.list]]
+        [[params.services.list]]
             icon = "fa-users"
             title = "Kleingruppen"
             description = "Eine super Möglichkeit im Glauben zu wachsen, mit anderen Leben zu teilen und Gott besser kennenzulernen."
 
         [[params.services.list]]
-			icon = "fa-praying-hands"
-			title = "Gebet"
-			description = "Wir glauben, dass Gebet eine große Kraft hat, weil Gott Gebet erhört und dadurch handelt."
+            icon = "fa-praying-hands"
+            title = "Gebet"
+            description = "Wir glauben, dass Gebet eine große Kraft hat, weil Gott Gebet erhört und dadurch handelt."
 
         [[params.services.list]]
             icon = "fa-pizza-slice"
@@ -90,31 +90,31 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 
     # Portfolio modals
-	[params.portfolio.modal]
+    [params.portfolio.modal]
         client = "Client"
         date = "Date"
         category = "Category"
         buttonText = "Close"
 
     # Aside section
-	# [params.aside]
-	# 	headline = "Get the Creative Theme for Hugo"
+    # [params.aside]
+    # 	headline = "Get the Creative Theme for Hugo"
 
-	# 	[params.aside.button]
-	# 		text = "Download now"
-	# 		link = "//github.com/digitalcraftsman/hugo-creative-theme"
+    # 	[params.aside.button]
+    # 		text = "Download now"
+    # 		link = "//github.com/digitalcraftsman/hugo-creative-theme"
 
-	# Contact section
-	[params.contact]
-		headline = "Kontakt"
-		description = "Ruf uns an!"
-		phone = "0331-27379716"
-		email = "kontakt@erlebt-potsdam.de"
-		sectionid = "kontakt"
+    # Contact section
+    [params.contact]
+        headline = "Kontakt"
+        description = "Ruf uns an!"
+        phone = "0331-27379716"
+        email = "kontakt@erlebt-potsdam.de"
+        sectionid = "kontakt"
 
-	# Openstreetmap section
-	[params.location]
-		latitude  = 52.38903
-		longitude = 13.07447
-	 	popup = "Erlebt Büro - Das Siebzehn"
-		sectionid = "ort"
+    # Openstreetmap section
+    [params.location]
+        latitude  = 52.38903
+        longitude = 13.07447
+        popup = "Erlebt Büro - Das Siebzehn"
+        sectionid = "ort"
