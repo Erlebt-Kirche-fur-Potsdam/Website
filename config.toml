@@ -30,22 +30,23 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     # Navigation
     [params.navigation]
         brand = "Erlebt - Kirche für Potsdam"
+        href = "/#page-top"
 
         [[params.navigation.links]]
             title = "Über uns"
-            href = "#ueber-uns"
+            href = "/#ueber-uns"
 
         [[params.navigation.links]]
             title = "Sei dabei"
-            href = "#dabei"
+            href = "/#dabei"
 
         [[params.navigation.links]]
             title = "Ort"
-            href = "#ort"
+            href = "/#ort"
 
         [[params.navigation.links]]
             title = "Kontakt"
-            href = "#kontakt"
+            href = "/#kontakt"
 
     # Hero section
     [params.hero]
