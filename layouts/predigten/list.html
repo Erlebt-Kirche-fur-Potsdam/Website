@@ -10,17 +10,8 @@
 
 <div>
     <ul>
-        {{/* Get predigten years, sorted descending */}}
-        {{ range sort $.Site.Data.predigten "" "desc" }}
-
-        {{/* Get sermons, sorted descending by file name */}}
-        {{ range sort . "" "desc" }}
-            {{ $seriesInfo := index $.Site.Data.predigtseries .seriesId }}
-            {{ $seriesParams := dict "series" $seriesInfo }}
-            {{ $predigtParams := merge . $seriesParams }}
-            {{ partial "predigt-list-item" $predigtParams }}
-        {{ end }}
-
+        {{ range .Pages }}
+            {{ .Render "li" }}
         {{ end }}
     </ul>
 </div>

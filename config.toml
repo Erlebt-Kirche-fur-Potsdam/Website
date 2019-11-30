@@ -2,10 +2,7 @@ baseurl = "https://test.erlebt-potsdam.de"
 languageCode = "de-DE"
 title = "Erlebt - Kirche für Potsdam"
 theme = "hugo-creative-theme"
-
-[taxonomies]
-    predigt = "predigten"
-    predigtserie = "predigtseries"
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
 

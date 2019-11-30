@@ -1,0 +1,8 @@
+{{ $seriesInfo := index $.Site.Data.predigtseries .Params.seriesid }}
+<li>
+    <a href="/predigtseries/{{ .Params.seriesid }}/">
+        <img src="{{ $seriesInfo.image }}" alt="{{ $seriesInfo.title }}" />
+    </a>
+    <a href="{{ .Permalink }}">{{ .LinkTitle }}</a> by {{ .Params.speaker }}
+    <a href="{{ .Params.audio }}">Listen</a>
+</li>

@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<header class="header-predigten">
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1>{{ .Title }}</h1>
+        </div>
+    </div>
+</header>
+
+{{ $seriesInfo := index $.Site.Data.predigtseries .Params.seriesid }}
+<div>
+    <a href="/predigtseries/{{ .Params.seriesid }}/">
+        <img src="{{ $seriesInfo.image }}" alt="{{ $seriesInfo.title }}" />
+    </a>
+    {{ .Params.title }} by {{ .Params.speaker }}
+    <a href="{{ .Params.audio }}">Listen</a>
+</div>
+
+{{ end }}
