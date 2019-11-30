@@ -8,10 +8,10 @@
     </div>
 </header>
 
-{{ $seriesInfo := index $.Site.Data.predigtseries .Params.seriesid }}
+{{ $seriesInfo := .GetPage (printf "/predigtseries/%s" .Params.predigtserie) }}
 <div>
-    <a href="/predigtseries/{{ .Params.seriesid }}/">
-        <img src="{{ $seriesInfo.image }}" alt="{{ $seriesInfo.title }}" />
+    <a href="/predigtseries/{{ .Params.predigtserie }}/">
+        <img src="{{ $seriesInfo.Params.image }}" alt="{{ $seriesInfo.Params.title }}" />
     </a>
     {{ .Params.title }} by {{ .Params.speaker }}
     <a href="{{ .Params.audio }}">Listen</a>
