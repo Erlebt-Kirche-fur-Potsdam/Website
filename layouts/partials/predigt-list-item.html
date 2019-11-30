@@ -1,3 +1,7 @@
 <li>
+    <a href="/predigtseries/{{ .seriesId }}/">
+        <img src="{{ .series.image }}" alt="{{ .series.title }}" />
+    </a>
     {{ .title }} by {{ .speaker }}
+    <a href="{{ .audio }}">Listen</a>
 </li>

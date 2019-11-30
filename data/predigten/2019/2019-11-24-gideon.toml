@@ -1,5 +1,5 @@
 speaker = "Tobi Togno"
 title = "Gideon"
-series = "Gott Erlebt"
+seriesId = "002-gott-erlebt"
 passage = "The Bible"
 audio = "https://example.com/gideon.mp3"

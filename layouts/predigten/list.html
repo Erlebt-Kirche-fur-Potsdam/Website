@@ -15,7 +15,10 @@
 
         {{/* Get sermons, sorted descending by file name */}}
         {{ range sort . "" "desc" }}
-            {{ partial "predigt-list-item" . }}
+            {{ $seriesInfo := index $.Site.Data.predigtseries .seriesId }}
+            {{ $seriesParams := dict "series" $seriesInfo }}
+            {{ $predigtParams := merge . $seriesParams }}
+            {{ partial "predigt-list-item" $predigtParams }}
         {{ end }}
 
         {{ end }}

@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<header class="header-predigten">
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1>Predigtseries</h1>
+        </div>
+    </div>
+</header>
+
+<div>
+    <ul>
+        {{ range sort $.Site.Data.predigtseries "" "desc" }}
+            <li>
+                <img src="{{ .image }}"/>
+                {{ .title }}
+            </li>
+        {{ end }}
+    </ul>
+</div>
+
+{{ end }}

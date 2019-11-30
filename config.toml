@@ -5,6 +5,7 @@ theme = "hugo-creative-theme"
 
 [taxonomies]
     predigt = "predigten"
+    predigtserie = "predigtseries"
 
 [params]
 
