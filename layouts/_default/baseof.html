@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body id="page-top">
+        <div style="background-color: black">
+            {{ partial "nav.html" . }}
+        </div>
+
+        {{ block "main" . }}{{ end }}
+
+        {{ partial "js.html" . }}
+    </body>
+</html>

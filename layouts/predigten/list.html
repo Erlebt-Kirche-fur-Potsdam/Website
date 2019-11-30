@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<header class="header-predigten">
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1>{{ .Title }}</h1>
+        </div>
+    </div>
+</header>
+
+<div>
+    <ul>
+        {{/* Get predigten years, sorted descending */}}
+        {{ range sort $.Site.Data.predigten "" "desc" }}
+
+        {{/* Get sermons, sorted descending by file name */}}
+        {{ range sort . "" "desc" }}
+            {{ partial "predigt-list-item" . }}
+        {{ end }}
+
+        {{ end }}
+    </ul>
+</div>
+
+{{ end }}
