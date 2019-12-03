@@ -1,6 +1,6 @@
-{{ $seriesInfo := .GetPage (printf "/predigtseries/%s" .Params.predigtserie) }}
+{{ $seriesInfo := .GetPage (printf "/predigtreihen/%s" .Params.predigtreihe) }}
 <li>
-    <a href="/predigtseries/{{ .Params.predigtserie }}/">
+    <a href="/predigtreihen/{{ .Params.predigtreihe }}/">
         <img src="{{ $seriesInfo.Params.image }}" alt="{{ $seriesInfo.Params.title }}" />
     </a>
     <a href="{{ .Permalink }}">{{ .LinkTitle }}</a> by {{ .Params.speaker }}
