@@ -8,10 +8,11 @@
     </div>
 </header>
 
-{{ $seriesInfo := .GetPage (printf "/predigtreihen/%s" .Params.predigtreihe) }}
+{{ $seriesInfoUrl := (printf "/predigtreihen/%s" .Params.predigtreihe) | urlize }}
+{{ $seriesInfo := ($.Site.GetPage $seriesInfoUrl).Params }}
 <div>
-    <a href="/predigtreihen/{{ .Params.predigtreihe }}/">
-        <img src="{{ $seriesInfo.Params.image }}" alt="{{ $seriesInfo.Params.title }}" />
+    <a href="/predigtreihe/{{ .Params.predigtreihe | urlize }}/">
+        <img src="{{ $seriesInfo.image }}" alt="{{ .Params.predigtreihe }}" />
     </a>
     {{ .Params.title }} by {{ .Params.speaker }}
     <a href="{{ .Params.audio }}">Listen</a>
