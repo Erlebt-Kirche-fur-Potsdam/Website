@@ -76,22 +76,22 @@ theme = "hugo-creative-theme"
         sectionid = "dabei"
 
         [[params.services.list]]
-            icon = "fa-church"
+            icon = "fas fa-church"
             title = "Gottesdienst"
             description = "Du bist herzlich eingeladen vorbeizuschauen. Wir gestalten unsere Gottesdienste so, dass sie verständlich und ansprechend sind."
 
         [[params.services.list]]
-            icon = "fa-users"
+            icon = "fas fa-users"
             title = "Kleingruppen"
             description = "Eine super Möglichkeit im Glauben zu wachsen, mit anderen Leben zu teilen und Gott besser kennenzulernen."
 
         [[params.services.list]]
-            icon = "fa-praying-hands"
+            icon = "fas fa-praying-hands"
             title = "Gebet"
             description = "Wir glauben, dass Gebet eine große Kraft hat, weil Gott Gebet erhört und dadurch handelt."
 
         [[params.services.list]]
-            icon = "fa-pizza-slice"
+            icon = "fas fa-pizza-slice"
             title = "SHINE Jugend"
             description = "Das Jugendevent von erlebt. Jesus hat den SHINE Lifestyle vorgelebt und gezeigt, was wirklich wichtig ist im Leben."
 
