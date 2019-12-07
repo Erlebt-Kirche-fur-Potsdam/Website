@@ -8,12 +8,10 @@
     </div>
 </header>
 
-<div>
-    <ul>
-        {{ range .Pages }}
-            {{ .Render "li" }}
-        {{ end }}
-    </ul>
+<div class="container predigt-list">
+    {{ range .Pages }}
+        {{ .Render "li" }}
+    {{ end }}
 </div>
 
 {{ end }}

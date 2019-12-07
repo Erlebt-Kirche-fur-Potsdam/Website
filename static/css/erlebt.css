@@ -11,3 +11,15 @@ header.header-predigten {
     background-size: cover;
     -o-background-size: cover;
 }
+
+.predigt-list {
+    margin-bottom: 2em;
+}
+
+.predigt-list-item {
+    margin-top: 2em;
+}
+
+.predigt-item-details {
+    align-self: center;
+}

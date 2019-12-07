@@ -1,10 +1,15 @@
 {{ $seriesInfoUrl := printf "/predigtreihen/%s" (.Params.predigtreihe | urlize) }}
 {{ $seriesInfo := ($.Site.GetPage $seriesInfoUrl).Params }}
 {{ $seriesPageUrl := printf "/predigtreihe/%s" (.Params.predigtreihe | urlize) }}
-<li>
-    <a href="{{ $seriesPageUrl }}">
-        <img src="{{ $seriesInfo.image }}" alt="{{ .Params.predigtreihe }}" />
-    </a>
-    <a href="{{ .Permalink }}">{{ .LinkTitle }}</a> by {{ .Params.speaker }}
-    <a href="{{ .Params.audio }}">Listen</a>
-</li>
+<div class="row predigt-list-item">
+    <div class="col-sm-auto">
+        <a href="{{ $seriesPageUrl }}">
+            <img src="{{ $seriesInfo.image }}" alt="{{ .Params.predigtreihe }}" />
+        </a>
+    </div>
+    <div class="col predigt-item-details">
+        <a href="{{ .Permalink }}">{{ .LinkTitle }}</a> by {{ .Params.speaker }}
+        <br>
+        <a href="{{ .Params.audio }}">Listen</a>
+    </div>
+</div>
