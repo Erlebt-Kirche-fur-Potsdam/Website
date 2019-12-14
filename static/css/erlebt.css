@@ -20,6 +20,15 @@ header.header-predigten {
     margin-top: 2em;
 }
 
-.predigt-item-details {
-    align-self: center;
+.predigt-list-item .series-link {
+    display: block;
+    max-width: 100%;
+}
+
+.predigt-list-item .series-img {
+    max-width: 100%;
+}
+
+.predigt-list-item .card-body .row {
+    align-items: center;
 }

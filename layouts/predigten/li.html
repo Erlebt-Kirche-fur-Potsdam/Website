@@ -2,22 +2,29 @@
 {{ $seriesInfo := ($.Site.GetPage $seriesInfoUrl).Params }}
 {{ $seriesPageUrl := printf "/predigtreihe/%s" (.Params.predigtreihe | urlize) }}
 <div class="row predigt-list-item">
-    <div class="col-sm-1"></div>
-    <div class="col-md-auto text-center">
-        <a href="{{ $seriesPageUrl }}">
-            <img src="{{ $seriesInfo.image }}" alt="{{ .Params.predigtreihe }}" />
-        </a>
-    </div>
-    <div class="col-md predigt-item-details text-truncate">
+
+    <div class="col-md-8 offset-md-2">
         <div class="card">
-            <div class="card-body text-truncate">
-                <h5 class="card-title">{{ .LinkTitle }}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">{{ .Date.Format "02.01.2006" }} von {{ .Params.speaker }}</h6>
-                <p class="card-text">
-                    {{ .Params.passage }} <a href="{{ .Params.audio }}">zuhören</a>
-                </p>
+            <div class="card-body">
+
+                <div class="row">
+                    <div class="col-sm">
+                        <a href="{{ $seriesPageUrl }}" class="series-link">
+                            <img src="{{ $seriesInfo.image }}" alt="{{ .Params.predigtreihe }}" class="series-img" />
+                        </a>
+                    </div>
+                    <div class="col-sm">
+                        <h5 class="card-title">{{ .LinkTitle }}</h5>
+                        <h6 class="card-subtitle mb-2">{{ .Params.passage }}</h6>
+                        <p class="card-text text-muted">
+                            {{ .Date.Format "02.01.2006" }} von {{ .Params.speaker }}
+                             <br>
+                            <a href="{{ .Params.audio }}">Runterladen / zuhören</a>
+                        </p>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
-    <div class="col-sm-1"></div>
 </div>
